@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Things To Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>📝 Things To Do</header>
+
+  <main>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Tulis kegiatan kamu..." />
+      <input type="datetime-local" id="taskTime" />
+      <select id="taskPriority">
+        <option value="high">Penting</option>
+        <option value="medium">Sedang</option>
+        <option value="low">Bisa Ditunda</option>
+      </select>
+      <button onclick="addTask()">Tambah</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    <div class="calendar" id="calendar"></div>
+  </main>
+
+  <div class="popup" id="popup">⚠️ Ada kegiatan yang belum selesai!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
